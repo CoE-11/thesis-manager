@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/css/style.css" rel="stylesheet">
+</head>
+  <body>
+    <form class="form1" action="/student/edit/{{student.key.id()}}" method="post">
+      <h2>Edit Information<h2><hr>
+      <input type="text" name="first_edit" value= "{{student.first_name}}" placeholder="first name"></input>
+      <input type="text" name="last_edit" value = "{{student.last_name}}" placeholder="last name"></input>
+      <input type="number" name="age_edit" value = "{{student.age}}" placeholder="age"></input>
+      <input type="submit" class="btn" value="Submit">
+
+      <a href="/student/list" style="color:rgb(200,200,255)"> Cancel</a>
+  </form>
+      <div id="regDone" class="regDone">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Registration Success!</h2>
+            <p>You can now view your student list at the link.</p>
+            <p>Enjoy the compassion of sharing your own ideas and experience to others.</p>
+            <a href = '/' class = 'modalBtn'>Home</a></center>
+            <a href ='/student/list' class = 'modalBtn'>List</a></center>
+      </div>
+    </div>
+  </body>
+</html>

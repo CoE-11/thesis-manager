@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 0.8em "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+	color: #343434;
+	background: #121212;
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	width: 710px;
+	margin: 30px auto;
+	background: #0d0d0d url(static/images/header_student.jpg) no-repeat;
+	padding: 10px 25px 25px 25px;
+	border: 12px solid #2e2e2e;
+	position:relative;
+}
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	padding: 0.3em 0;
+	text-indent:-99999px;
+}
+#nav {
+	list-style: none;
+	padding: 0;
+	margin: 5px 0 20px 0;
+	background: #2e2e2e;
+	display: block;
+	overflow: hidden;
+	font-size: 0.9em;
+	height:100px;
+	text-transform:capitalize;
+}
+#nav li {
+	display: inline;
+}
+#nav li a {
+	display: block;
+	float: left;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+}
+#nav li a:hover {
+	background: #1b1b1b;
+}
+
+h2 {
+	margin: 0;
+	padding: 0.5em 0;
+	color:#568945;
+	font-family:Helvetica, Arial, Sans-serif;
+}
+p {
+	margin: 0;
+	padding: 0.4em 0;
+	color:#686868;
+	line-height:1.4em;
+}
+
+#foot {
+	padding: 15px;
+	color: white;
+	text-align: center;
+	margin: 30px 0 0 0;
+	border-top:1px solid #222222;
+}
+
+.big_button {
+  width: 200px;
+  height: 45px;
+  margin: 20px 30px 10px 30px;
+  color: black;
+  background-color: rgb(100,100,100);
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  font-family: 'Cooper Black', Georgia, Verdana;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.left {
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+.right {
+	margin-right: -10%;
+	margin-left:5%;
+}
+
+.big_button:hover,.big_button:hover {
+  background:rgb(0,0,0);
+  border: 1px solid #87CEEB;
+  color:#87CEEB;
+}
+
+.form1,.list {
+	position: relative;
+	width: 710px;
+	height: auto;
+	left: 50%;
+	margin-left: -355px;
+	margin-top: 20px;
+	background: #333;
+	padding: 10px 25px 20px 25px;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 3px;
+}
+
+.form1 input {
+  background:rgba(255,255,255,0.8);
+  border: 2px solid #87CEEB;
+  color:navy;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  width: 60%;
+  height: auto;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(3,3,3,1);
+}
+
+.form1 input.btn:hover {
+	background-color: navy;
+	color:rgb(240,240,240);
+}
+
+.list ul li {
+	border-bottom:1px solid #fff;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom: 5px;
+}
+
+.list ul li:hover { 
+	background:rgb(200,200,255);
+	color:rgb(40,40,40);
+}
+
+.list ul li a { 
+	color:rgb(204,85,0);
+}
+
+.list ul {
+	background-color: rgb(10,10,10);
+	padding: 5px 10px 5px 30px
+}
+
+.regDone,.regDone2 {
+  display: none;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #C0C0C0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 200ms ease-in;
+  pointer-events: none;
+}
+
+.regDone:target,.regDone2:target {
+	display: block;
+  opacity:1;
+  pointer-events: auto;
+}
+
+.regDone > div,.regDone2 > div{
+  width: 400px;
+  margin: 10% auto;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: url('/static/images/modal_back.png') no-repeat;
+  background-size: cover;
+  border: 1px solid #8E8E8E;
+}

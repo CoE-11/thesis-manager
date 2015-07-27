@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <form class="form1" action="/student/create" method="post">
+    <h2>Create Student<h2><hr>
+     <input type="text" name="first_name" placeholder="first name" style=" margin-bottom: 15px;" required></input>
+     <input type="text" name="last_name" placeholder="last name" style=" margin-bottom: 15px;" required></input>
+     <input type="number" name="age" placeholder="age" style=" margin-bottom: 15px;" required></input>
+     <input type="submit" class="btn" value="Create">
+    </form>
+
+    <a href="/" style="color:rgb(200,200,255)">Cancel</a>
+    <div id="regDone" class="regDone">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Registration Success!</h2>
+            <p>You can now view your student list at the link.</p>
+            <p>Enjoy the compassion of sharing your own ideas and experience to others.</p>
+            <a href = '/' class = 'modalBtn'>Home</a></center>
+            <a href ='/student/list' class = 'modalBtn'>List</a></center>
+      </div>
+</body>

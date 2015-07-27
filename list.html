@@ -1,0 +1,17 @@
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="list">
+	<h2>Student's List<h2><hr>
+<ul>
+{% for student in student_list %}
+    <li>{{student.first_name}} {{student.last_name}}<span style="float:right"><a href='/student/edit/{{student.key.id()}}'>edit</a> &nbsp <a href='/student/delete/{{student.key.id()}}'>delete</a></li>
+{% endfor %}
+</ul>
+<a href="/student/create" style="color:rgb(200,200,255)">Create another</a> <a href="/" style="color:rgb(200,200,255)">Home</a>
+</div>
+
+</body>
+</html>
