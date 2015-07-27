@@ -82,8 +82,8 @@ class  StudentDelete(webapp2.RequestHandler):
         
 class DeletePage(webapp2.RequestHandler):
     def get(self):
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write('Delete Success! <a href="/student/list">view students</a>')
+        template = JINJA_ENVIRONMENT.get_template('delete.html')
+        self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
     ('/student/create', CreateStudentPage),
