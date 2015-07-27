@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/css/style.css" rel="stylesheet">
+</head>
+  <body>
+    <div class="studPage">
+      <h2>Student Information<h2><hr>
+      <ul class="info">
+        First Name: <li>{{student.first_name}}</li>
+        Last Name: <li>{{student.last_name}}</li>
+        Student Age: <li>{{student.age}}</li>
+        <a href='/student/edit/{{student.key.id()}}' style="color:rgb(255,150,150)"> edit</a>
+        <a href='/student/delete/{{student.key.id()}}' style="color:rgb(255,150,150)">delete</a></li>
+      </ul>
+
+      <a href="/student/list" style="color:rgb(200,200,255)"> Cancel</a>
+    </div>
+  </body>
+</html>

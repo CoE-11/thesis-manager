@@ -105,7 +105,7 @@ p {
   color:#87CEEB;
 }
 
-.form1,.list {
+.form1,.list,.studPage {
 	position: relative;
 	width: 710px;
 	height: auto;
@@ -118,7 +118,7 @@ p {
 	border-radius: 3px;
 }
 
-.form1 input {
+.form1 input ,.studPage ul li{
   background:rgba(255,255,255,0.8);
   border: 2px solid #87CEEB;
   color:navy;

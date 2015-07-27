@@ -65,6 +65,15 @@ class  StudentEdit(webapp2.RequestHandler):
         s.put()
         self.redirect('#regDone')
 
+class  StudentPage(webapp2.RequestHandler):
+    def get(self,stud_id):
+        s = Student.get_by_id(int(stud_id))
+        template_data = {
+            'student': s
+        }
+        template = JINJA_ENVIRONMENT.get_template('studPage.html')
+        self.response.write(template.render(template_data))
+
 class  StudentDelete(webapp2.RequestHandler):
     def get(self,stud_id):
         d = Student.get_by_id(int(stud_id))
@@ -84,4 +93,5 @@ app = webapp2.WSGIApplication([
     ('/student/list', StudentList),
     ('/success', SuccessPage),
     ('/delete', DeletePage),
+    ('/student/page/(.*)', StudentPage)
 ], debug=True)
